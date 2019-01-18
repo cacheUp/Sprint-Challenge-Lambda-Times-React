@@ -8,8 +8,8 @@ const Tabs = props => {
         {props.tabs.map(tabOnMap => (
           <Tab
             tab={tabOnMap}
-            changeSelected={this.changeSelected}
-            selectedTab={this.selectedTab}
+            changeSelected={props.changeSelected}
+            selectedTab={props.selectedTab}
           />
         ))}
       </div>
